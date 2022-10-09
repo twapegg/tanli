@@ -1,0 +1,53 @@
+body {
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  display: block;
+  height: 3000px;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  text-shadow: 1.5px 1.5px 4px #000000;
+}
+
+li {
+  padding-right: 45px;
+  display: inline-block;
+}
+.top-navigation {
+  text-align: center;
+  background: #26385c;
+  font-size: 16px;
+  font-family: Roboto;
+  line-height: 30px;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  height: 58px;
+}
+
+.banner {
+  width: 100%;
+  height: 418px;
+  padding-top: 58px;
+  object-fit: cover;
+}
+
+.row {
+  display: inline-block;
+}
+.column1 {
+  width: 15%;
+}
+
+.column2 {
+  width: 70%;
+  text-align: center;
+}
+
+.column3 {
+  width: 15%;
+  text-align: right;
+}
