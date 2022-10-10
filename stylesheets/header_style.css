@@ -1,0 +1,393 @@
+/* HEADER STYLES */
+
+/* whole document */
+
+* {
+    margin:0px;
+    padding:0px;
+    border:0px;
+
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+/* upper logo */
+
+.upper_header {
+    height: 30px;
+    background-color: #00132c;
+    color: #ffff;
+
+    border: 0px;
+    margin:0px;
+    padding: 10px;
+}
+
+/* upper Navbar */
+.upper_header ul li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+} 
+
+/* Search */
+
+.upper_header input {
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+/* Logo */
+
+.header {
+    background-color:#001c41;
+}
+
+.logo_header {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* Navbar */
+
+.container_navbar {
+    display: flex;
+    justify-content: space-around;  
+
+    font-size: 20px;
+
+    background-color: rgb(43, 41, 41);
+    color:#fff;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* School Image */
+
+.school_image {
+    width: 100%;
+    height: auto;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* About Us */
+
+.about_us {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* About Us -- Image */
+
+.about_us img { 
+    width: 100%;
+    height:auto;
+
+    float: right;
+    margin-right: 100px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+
+    border-radius: 100px;
+}
+
+/* About Us -- Content */
+
+.about_content { 
+    text-align: justify;
+    padding-right: 200px;
+    margin-left: 100px;
+
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.about_content p {
+    padding: 10px;
+}
+
+.about_content h1 {
+    color: #001c41;
+    margin-top: 50px;
+    padding-bottom: 30px;
+
+    font-size: 80px;
+    font-family: 'PT Serif', serif;
+}
+
+/* Schedule  */
+
+.schedule h2 {
+    color: #001c41;
+    margin-top: 20px;
+    padding-bottom: 30px;
+
+    font-size: 40px;
+    text-align: center;   
+    font-family: 'PT Serif', serif;
+}
+
+.schedule p {
+    text-align: justify;
+    margin-left: 300px;
+    margin-right: 300px;
+
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.schedule_breakdown {
+    display: flex;
+    align-items: center;
+}
+
+/* Schedule Breakdown */
+
+.sched1 {
+    background-color: #f8a9a9;
+}
+
+.sched2 {
+    background-color: #fcd59e;
+}
+
+.sched3 {
+    background-color: #ffff94;
+}
+
+.sched4 {
+    background-color: #9dfc8a;
+}
+
+.sched5 {
+    background-color: #86b6fa;
+}
+
+.sched6 {
+    background-color: #fdabf0;
+}
+
+/* Entire Schedule Layout */
+
+table {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+} 
+
+td {
+    border: 1px;
+    border-color: black;
+    border-style: dotted;
+    border-radius: 30px;
+
+    padding: 50px;
+    text-align: center;
+}
+
+/* Gallery */
+
+.gallery_header {
+    font-size: 50px;
+    text-align: center;
+}
+
+.gallery_header h1 {
+    color:#001c41;
+    font-family: 'PT Serif', serif;
+    font-size: 40px;
+}
+
+.gallery {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.gallery1 {
+    display: flex;
+    justify-content: space-around;
+
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.gallery2 {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.gallery3 {
+    display: flex;
+    justify-content: space-around;
+
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+/* photos */
+
+.pic1 {
+    width: 30%;
+    height: auto;
+}
+
+.pic2 {
+    width: 30%;
+    height: auto;
+}
+
+.pic3 {
+    width: 30%;
+    height: auto;
+}
+
+.pic4 {
+    width: 30%;
+    height: auto;
+}
+
+.pic5 {
+    width: 30%;
+    height: auto;
+}
+
+.pic6 {
+    width: 30%;
+    height: auto;
+}
+
+.pic7 {
+    width: 30%;
+    height: auto;
+}
+
+.pic8 {
+    width: 30%;
+    height: auto;
+}
+
+.pic9 {
+    width: 30%;
+    height: auto;
+}
+
+/* News & Announcements */
+
+/* Content */
+.news_content {
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 200px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.news_content h1 {
+    color: #001c41;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+
+    font-size: 40px;
+    font-family: 'PT Serif', serif;
+}
+
+.news_content h2 {
+    font-family: 'PT Serif', serif;
+    font-size: 30px;
+    color: #001c41;
+}
+
+/* testomonies */
+
+.testimony_all {
+    background-image: url(/images2/children\ holding\ hands3.jpg);
+    background-size: 100%;
+}
+
+.testimony_header h2 {
+    text-align: center;
+    font-size: 40px;
+
+    color:#ffff;
+    font-family: 'PT Serif', serif;
+    padding-top:50px;
+}
+
+.testimonies {
+    display: flex;
+    justify-content: space-around;
+
+    font-size: 15px;
+    line-height: 40px;
+
+    margin-left: 100px;
+    margin-right: 100px;
+
+    text-align: justify;
+    color: #ffff;
+}
+
+.testimonies blockquote {
+    padding: 50px;
+}
+
+/* footer */
+
+.footer {
+    background: #00132c;
+    color: #ffff;
+
+    padding: 50px;
+
+    display: flex;
+    justify-content: space-around;
+
+    text-align: center;
+    line-height: 30px;
+}
+
+/* Lower Footer */
+
+.footer ul {
+    list-style-type: none;
+}
+
+.lower_footer {
+    background:#00132c;
+    color: rgba(255, 255, 255, 0.541);
+    line-height: 30px;
+
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.logo_footer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

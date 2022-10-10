@@ -1,0 +1,18 @@
+/* Body Styles */
+
+/*  */
+.about_header {
+    text-align: left;
+    font-family: 'Source Serif', serif;
+    font-size: 40px;
+}
+
+.about_us p {
+    text-align: justify;
+    padding-left: 20px;
+}
+
+.about_header {
+    padding: 10px;
+}
+
