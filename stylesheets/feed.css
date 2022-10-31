@@ -1,0 +1,33 @@
+.feed {
+  padding-left: 250px;
+  padding-right: 250px;
+  width: 100%;
+}
+
+.feed h2 {
+  color: var(--main-color);
+  font-size: 30px;
+}
+
+.grid {
+  margin-top: 65px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.column1 {
+  width: 33.33%;
+}
+
+.column {
+  width: 33.33%;
+  margin-left: 75px;
+}
+
+.grid img {
+  width: 100%;
+  margin-bottom: 75px;
+  height: 350px;
+  object-fit: cover;
+}

@@ -1,0 +1,32 @@
+:root {
+  --main-color: #fba628;
+  --black: #fff;
+  --bg: #262626;
+  --light-bg: #333;
+  --border: 1px solid rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  --low-opacity: rgba(255, 255, 255, 0.1);
+}
+* {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+body {
+  background: var(--light-bg);
+}
+
+body.active {
+  --black: #262626;
+  --bg: #fff;
+  --light-bg: #eee;
+  --light-color: #eee;
+  --border: 1px solid rgba(255, 255, 255, 0.1);
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}

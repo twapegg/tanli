@@ -1,0 +1,14 @@
+.fas-textbox {
+  padding-top: 28px;
+  color: var(--black);
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--main-color);
+  display: flex;
+}
+
+.textboximg {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  display: inline-block;
+}
