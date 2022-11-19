@@ -1,0 +1,50 @@
+.visual-box {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.visual-box video {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.visual-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: calc(50% + 10px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 265px;
+}
+
+.visual-motto {
+  padding-bottom: 5px;
+  min-height: 100px;
+}
+
+.visual-button {
+  display: inline-block;
+  position: absolute;
+  top: calc(50% + 10px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100px;
+}
+
+.visual-button button {
+  text-align: center;
+  padding: 0.9em 2.4em;
+  font-size: 16px;
+  font-weight: bold;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.visual-button button:hover {
+  transform: scale(1.1);
+}

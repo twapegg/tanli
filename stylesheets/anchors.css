@@ -1,0 +1,15 @@
+.anchors {
+  position: fixed;
+  top: 50%;
+  left: 2.5%;
+  z-index: 10;
+}
+
+.anchorbutton {
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.anchorbutton i {
+  color: var(--black);
+}
