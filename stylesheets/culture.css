@@ -1,0 +1,97 @@
+#pass img {
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.entry-container {
+  display: flex;
+  padding-bottom: 25vh;
+}
+
+.left-column {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-column {
+  width: 50%;
+  margin-left: 70px;
+}
+
+.image-box {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+}
+.button-down:hover,
+.button-down:hover i,
+.button-down:hover a {
+  color: var(--bg);
+  background-color: #ffffff;
+}
+
+.nav-button {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 10;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+}
+
+.nav-button i {
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.nav-button.left {
+  left: 0;
+}
+
+.nav-button.right {
+  right: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .nav-button {
+    display: block;
+  }
+}
+
+.right-column h2 {
+  font-family: "Chewy", cursive;
+  font-size: 24px; /* Set the font size to 48px */
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+  color: #fff;
+}
+
+.right-column p {
+  margin-top: 15px;
+  line-height: 2fr;
+  font-size: 12px; /* Set the font size to 24px */
+  color: #fff; /* Set the text color to white */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+  text-align: left; /* Center the text */
+}

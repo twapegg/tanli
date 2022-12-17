@@ -1,0 +1,109 @@
+.header-navbar {
+  position: absolute;
+  top: 1.5rem;
+  left: 30rem;
+  right: 30rem;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: transparent;
+}
+
+/* Logo container */
+.header-navbar .logo-container {
+  flex: 1;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+/* Logo */
+.header-navbar .logo-container img {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Links container */
+.header-navbar .links-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 45px;
+}
+
+/* Links */
+.header-navbar .links-container a {
+  display: block;
+  padding: 0 10px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* entries link */
+.header-navbar .links-container #entries:after {
+  content: "";
+  position: absolute;
+  background-color: var(--color);
+  height: 2.5px;
+  width: 0%;
+  bottom: -10px;
+  left: 0;
+  transition: 0.3s;
+}
+.header-navbar .links-container #entries:hover:after {
+  width: 100%;
+}
+
+/* entries dropdown menu */
+.header-navbar .links-container .entries-menu {
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+}
+
+.header-navbar .links-container .entries-menu .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  margin: 0;
+  list-style: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  line-height: 28px;
+}
+
+.header-navbar .links-container .entries-menu .dropdown-menu li {
+  width: 120px;
+}
+.header-navbar .links-container .entries-menu:hover .dropdown-menu {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.header-navbar .links-container .entries-menu .dropdown-menu li:hover {
+  background-color: var(--color);
+}
+
+/* contact link */
+.header-navbar .links-container #reachout {
+  border: 4px solid #ffffff;
+  padding: 15px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.header-navbar .links-container #reachout:hover {
+  background-color: #ffffff;
+  color: var(--bg);
+}
