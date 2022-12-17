@@ -1,0 +1,66 @@
+/* The hero section */
+.heroentry {
+  padding-top: 15rem;
+  width: 100%; /* Set the width to 100% of the parent container */
+  display: flex; /* Enable flexbox for the hero section */
+  align-items: left; /* Vertically center the content inside the hero section */
+  flex-direction: column;
+  padding-bottom: 40vh;
+  gap: 20px;
+}
+
+/* The hero title */
+.heroentry h1 {
+  font-family: "Chewy", cursive;
+  font-size: 120px; /* Set the font size to 48px */
+  font-weight: 400;
+  color: #fff;
+}
+
+/* The heroentry subtitle */
+.heroentry p,
+button {
+  font-size: 20px; /* Set the font size to 24px */
+  color: #fff; /* Set the text color to white */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+  text-align: left; /* Center the text */
+}
+
+.button-down {
+  border: 4px solid #ffffff;
+  padding: 15px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: transparent;
+  cursor: pointer;
+  width: 175px;
+}
+.heroentry span {
+  font-family: "Chewy", cursive;
+}
+
+.underline {
+  color: var(--color);
+  text-decoration: none; /* remove default underline */
+  position: relative; /* necessary for positioning the pseudo-element */
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  bottom: 5px; /* position the pseudo-element just below the text */
+  left: 0;
+  right: 0;
+  background-color: currentColor; /* use the same color as the text */
+  height: 2px; /* height of the underline */
+  animation: blink 3s; /* animate the pseudo-element with a 1 second duration that repeats indefinitely */
+}
+
+@keyframes blink {
+  0% {
+    width: 0; /* start the animation with the pseudo-element hidden */
+  }
+  100% {
+    width: 100%; /* hide the pseudo-element for the other half of the duration */
+  }
+}
