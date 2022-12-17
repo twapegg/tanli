@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/styles.css" />
+    <link rel="stylesheet" href="stylesheets/header.css" />
+    <link rel="stylesheet" href="stylesheets/hero.css" />
+    <link rel="stylesheet" href="stylesheets/aboutwpe.css" />
+    <link rel="stylesheet" href="stylesheets/journals.css" />
+    <link rel="stylesheet" href="stylesheets/footer.css" />
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <script src="scripts/scriptentries.js"></script>
+    <title>tanli - entries</title>
+  </head>
+  <body>
+    <!-- Top Navigation -->
+    <div class="header-navbar" id="top">
+      <!-- Logo container -->
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="images/tanli.png" alt="Logo" />
+        </a>
+      </div>
+
+      <!-- Links container -->
+      <div class="links-container">
+        <div class="entries-menu">
+          <a href="entries.html" id="entries">entries</a>
+          <ul class="dropdown-menu">
+            <li><a href="classroom.html">Classroom</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="court.html">Court</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="church.html">Church</a></li>
+          </ul>
+        </div>
+
+        <a href="#contact" id="reachout" class="scroll-link">get in touch</a>
+      </div>
+    </div>
+    <div class="container">
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <h1>wpe online journal</h1>
+        <p>
+          reminisce through the
+          <span class="colored">moments</span> once again
+          <span class="cursor">|</span>
+        </p>
+      </section>
+      <!-- ABOUT SECTION -->
+      <section class="about-me">
+        <div class="about-me-text">
+          <h2>what is whole person education?</h2>
+          <p>
+            <strong> Whole person education </strong>
+            <span class="colored"> connects academics to values</span>. In the
+            classroom, church, court, culture, and in the community, it
+            challenges students to develop the knowledge and skills they need
+            for professional success and the character, ethics, and values they
+            need for personal fulfillment and service to others.
+          </p>
+          <p>
+            <i>
+              “Whole person education to me is an education that builds
+              competence, builds character, and builds faith in God, together.”
+            </i>
+          </p>
+          <p>- Former SU President Dr. Ben S. Malayang III</p>
+        </div>
+      </section>
+      <section class="journal">
+        <h1>online journals</h1>
+        <div class="popup">
+          <div class="Community">
+            <a href="community.html">
+              <img src="images/community2.png" alt="" />
+            </a>
+          </div>
+
+          <div class="Church">
+            <a href="church.html">
+              <img src="images/church2.jpg" alt="" />
+            </a>
+          </div>
+
+          <div class="Culture">
+            <a href="culture.html">
+              <img src="images/culture2.png" alt="" />
+            </a>
+          </div>
+
+          <div class="Classroom">
+            <a href="classroom.html">
+              <img src="images/classroom2.png" alt="" />
+            </a>
+          </div>
+
+          <div class="Court">
+            <a href="court.html">
+              <img src="images/court2.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div id="slideshow">
+        <button id="left-button">&#8592;</button>
+        <img src="images/church.png" id="slideshow-image" />
+        <button id="right-button">&#8594;</button>
+      </div>
+      <!-- STYLE -->
+      <style>
+        #slideshow-image {
+          width: 500px;
+          height: 500px;
+        }
+      </style>
+
+      <!-- SCRIPT -->
+      <script>
+        let index = 0;
+        const images = [
+          "images/classroom.png",
+          "images/court.png",
+          "image3.jpg",
+        ];
+
+        const leftButton = document.getElementById("left-button");
+        const rightButton = document.getElementById("right-button");
+        const slideshowImage = document.getElementById("slideshow-image");
+
+        leftButton.addEventListener("click", () => {
+          index--;
+          if (index < 0) {
+            index = images.length - 1;
+          }
+          slideshowImage.src = images[index];
+        });
+
+        rightButton.addEventListener("click", () => {
+          index++;
+          if (index >= images.length) {
+            index = 0;
+          }
+          slideshowImage.src = images[index];
+        });
+      </script>
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-contact">
+            <h3 id="contact">contact me</h3>
+            <p>Phone: +63 960 528 2330</p>
+            <p>Email: johntaltonaga@su.edu.ph</p>
+          </div>
+          <div class="footer-buttons">
+            <a
+              href="https://www.instagram.com/ppugppugi/"
+              class="btn btn-primary"
+            >
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://github.com/twapegg" class="btn btn-secondary"
+              ><i class="bi bi-github"></i
+            ></a>
+          </div>
+          <div class="footer-copyright">
+            <button class="scroll-top">
+              <a href="#top"> Back to top </a>
+            </button>
+            <p>&copy; 2022 John Stanley Altonaga</p>
+            <p>Built and designed by John Stanley Altonaga</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
