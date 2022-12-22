@@ -8,4 +8,3 @@ Finished December 17, 2022
 ### Language/s used:
 - HTML
 - CSS
-- JavaScript
